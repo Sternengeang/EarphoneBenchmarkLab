@@ -1,7 +1,7 @@
 # EarphoneBenchmarkLab v2.1
 An open-source headphone testing/analyzing tool
 ## Note
-- please run in Matlab R2018b or higher
+- running in Matlab R2018b or higher
 - please follow the terms and conditions of GPLv3
 - please use it at your own risk
 ## How to use
