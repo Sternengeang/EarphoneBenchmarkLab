@@ -186,7 +186,7 @@ global curve2;
 global freq2;
 global ptr10000hz;
 global isPhase360;
-fs2=1e4;
+fs2=1e2;
 fr2=[];
 phase2=[];
 if figureNum==1
