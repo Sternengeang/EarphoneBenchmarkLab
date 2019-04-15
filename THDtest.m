@@ -83,10 +83,10 @@ yln=yl;
 for i=logfreq2
     exfreq=10^i;
     %         if exfreq<999 || exfreq>1001
-%     d = designfilt('bandstopiir','FilterOrder',2, ...
-%         'HalfPowerFrequency1',exfreq-i*1,'HalfPowerFrequency2',exfreq+i*1, ...
-%         'DesignMethod','butter','SampleRate',fs);
-d=designfilt('bandstopiir', 'FilterOrder', 2, 'StopbandFrequency1', exfreq-0.01, 'StopbandFrequency2', exfreq+0.01, 'StopbandAttenuation', 45,'SampleRate', fs);
+     d = designfilt('bandstopiir','FilterOrder',2, ...
+         'HalfPowerFrequency1',exfreq-i*1,'HalfPowerFrequency2',exfreq+i*1, ...
+         'DesignMethod','butter','SampleRate',fs);
+%d=designfilt('bandstopiir', 'FilterOrder', 2, 'StopbandFrequency1', exfreq-0.01, 'StopbandFrequency2', exfreq+0.01, 'StopbandAttenuation', 45,'SampleRate', fs);
     yln=filtfilt(d,yln);
     %         end
 end
